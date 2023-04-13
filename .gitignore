@@ -1,0 +1,9 @@
+node_modules/
+cypress/screenshots/
+cypress/test-results/
+cypress/cucumber-json/
+cypress/cucumber-report/
+yarn-error.log
+cypress/data/
+cypress/videos/
+.vscode/settings.json

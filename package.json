@@ -1,0 +1,42 @@
+{
+    "name": "emils-daughter-challenge",
+    "version": "1.0.0",
+    "description": "Basic Challenge",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        " --- CYPRESS DEV SCRIPTS ---- ": "",
+        "cy:open": "cypress open",
+        "cy:run": "cypress run --browser chrome",
+        "cy:tags": "cypress-tags run -e",
+        "cy:debug": "cypress-tags run -e TAGS='@debug'"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/luizoscargmacedo/EMILsDaughter-challenge"
+    },
+    "keywords": [
+        "Cypress",
+        "Automation",
+        "Challenge"
+    ],
+    "author": "Luiz Oscar GM",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/luizoscargmacedo/EMILsDaughter-challenge/issues"
+    },
+    "homepage": "https://github.com/luizoscargmacedo/EMILsDaughter-challenge#readme",
+    "dependencies": {
+        "cypress-real-events": "^1.6.0",
+        "dayjs": "^1.11.0",
+        "yarn": "^1.22.17"
+    },
+    "devDependencies": {
+        "cypress": "^9.4.1",
+        "cypress-cucumber-preprocessor": "^4.3.1"
+    },
+    "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": true,
+        "stepDefinitions": "cypress/integration/"
+    }
+}

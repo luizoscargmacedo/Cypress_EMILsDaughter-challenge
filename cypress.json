@@ -1,0 +1,19 @@
+{
+    "projectId": "basic7challenge",
+    "baseUrl": "https://www.mercedes-benz.co.uk",
+    "defaultCommandTimeout": 30000,
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "video": true,
+    "videoCompression": false,
+    "experimentalSessionAndOrigin": false,
+    "retries": {
+        "runMode": 0,
+        "openMode": 0
+    },
+    "testFiles": [
+        "**/*.feature",
+        "**/*.spec.js"
+    ],
+    "numTestsKeptInMemory": 0
+}
