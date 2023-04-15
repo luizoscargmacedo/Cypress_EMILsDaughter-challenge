@@ -24,6 +24,8 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+
+// To Open LOCAL MARKET website
 Cypress.Commands.add('openWebsite', (serviceType) => {
     switch (serviceType) {
         // United Kingdom market
@@ -39,6 +41,8 @@ Cypress.Commands.add('openWebsite', (serviceType) => {
             cy.visit('https://www.mercedes-benz.de')
             break
     }
-    // To validate: WEBSITE is open correctly
+    // To validate that the WEBSITE is open correctly
     cy.get('iam-user-menu.webcomponent', { timeout: 4000 })
 })
+
+import 'cypress-waitfor'

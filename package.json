@@ -20,7 +20,7 @@
         "Automation",
         "Challenge"
     ],
-    "author": "Luiz Oscar GM",
+    "author": "Luiz Oscar Guabiraba de Macedo",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/luizoscargmacedo/EMILsDaughter-challenge/issues"
@@ -28,12 +28,15 @@
     "homepage": "https://github.com/luizoscargmacedo/EMILsDaughter-challenge#readme",
     "dependencies": {
         "cypress-real-events": "^1.6.0",
+        "cypress-waitfor": "^1.1.0",
         "dayjs": "^1.11.0",
+        "foreach": "^2.0.6",
         "yarn": "^1.22.17"
     },
     "devDependencies": {
         "cypress": "^9.4.1",
-        "cypress-cucumber-preprocessor": "^4.3.1"
+        "cypress-cucumber-preprocessor": "^4.3.1",
+        "cypress-iframe": "^1.0.1"
     },
     "cypress-cucumber-preprocessor": {
         "nonGlobalStepDefinitions": true,

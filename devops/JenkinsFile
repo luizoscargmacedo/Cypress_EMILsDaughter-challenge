@@ -1,0 +1,46 @@
+// It is an example of JENKINS Settings (to run Pipeline using Docker Linux)
+
+pipeline {
+    agent { node { label 'linux && node12' }}
+
+    options {
+        timeout(time: 300, unit: 'MINUTES')
+    }
+
+    environment {
+        PROJECT_NAME="EMILsDaughter-challenge"
+        VERSION="1.0.0"        
+
+        // AzureSTORAGE_ACCOUNT
+        AZURE_APP_ID = credentials('azureAppChallengeId')
+        AZURE_APP_PASS = credentials('azureAppChallengePass')
+        
+    } 
+
+    stages {
+        stage('Build image Dependencies') {
+            steps {
+                sh 'docker build . -f dockerfile.EMILsDaughter-challenge.cypress9 -t challenge-node:12.cypress5'
+            }
+        }
+        stage('Build test image ') {
+            steps {
+                sh 'docker build . -f dockerfile -t challenge-cypress-test'
+            }
+        }
+        stage('Tests') {
+            options {
+                timeout(time: 10, unit: 'MINUTES')
+            }
+
+            steps {
+                sh 'docker run challenge-cypress-test'
+            }
+        }   
+        stage('Clear test image ') {
+            steps {
+                sh 'docker image rm -f challenge-cypress-test'
+            }
+        }
+    }
+}
