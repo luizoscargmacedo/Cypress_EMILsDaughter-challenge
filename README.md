@@ -48,6 +48,11 @@ npx cypress run TAGS='@unitedkingdom' --browser chrome
 EMILsDaughter-challenge/report
 - Right Click on 'mochawesome.html', select the 'Copy Path' and open the PATH copied on the Browser.
 
+
+#### Screenshots Results of Automation Tests
+cypress/screenshots/functional/customer_regression/flow/unitedKingdomMarket/validateA_ClassModelsPrice.feature
+
+
 ### Project Information:
 Version: 1.0
 Created: 2023-04-13

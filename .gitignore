@@ -3,6 +3,7 @@ cypress/screenshots/
 cypress/test-results/
 cypress/cucumber-json/
 cypress/cucumber-report/
+report/
 yarn-error.log
 cypress/data/
 cypress/videos/
