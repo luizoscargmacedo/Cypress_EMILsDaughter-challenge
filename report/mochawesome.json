@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-16T01:23:12.300Z",
+    "end": "2023-04-16T01:23:49.216Z",
+    "duration": 36916,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0ea11674-8ee7-4cc8-9922-a7093d23da0b",
+      "title": "",
+      "fullFile": "cypress/integration/functional/customer_regression/flow/unitedKingdomMarket/validateA_ClassModelsPrice.feature",
+      "file": "cypress/integration/functional/customer_regression/flow/unitedKingdomMarket/validateA_ClassModelsPrice.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a6263aef-cd18-409e-9fe3-1ce033b72d61",
+          "title": "Validate A Class models price",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open Mercedes-benz United Kingdom market and validate the Main Menu",
+              "fullTitle": "Validate A Class models price Open Mercedes-benz United Kingdom market and validate the Main Menu",
+              "timedOut": null,
+              "duration": 15448,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "62d8162b-2bb1-4b93-882c-1196108de3c4",
+              "parentUUID": "a6263aef-cd18-409e-9fe3-1ce033b72d61",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Choose the 'A Class' model available",
+              "fullTitle": "Validate A Class models price Choose the 'A Class' model available",
+              "timedOut": null,
+              "duration": 17973,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "87d98fd8-0d78-4a11-b8d6-17805e1d3ca4",
+              "parentUUID": "a6263aef-cd18-409e-9fe3-1ce033b72d61",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Filter by Fuel type 'Diesel' and validate the highest and lowest price results",
+              "fullTitle": "Validate A Class models price Filter by Fuel type 'Diesel' and validate the highest and lowest price results",
+              "timedOut": null,
+              "duration": 2456,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "e6fd9f0c-aa15-4f7e-ba01-e173a6eb67bc",
+              "parentUUID": "a6263aef-cd18-409e-9fe3-1ce033b72d61",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "62d8162b-2bb1-4b93-882c-1196108de3c4",
+            "87d98fd8-0d78-4a11-b8d6-17805e1d3ca4",
+            "e6fd9f0c-aa15-4f7e-ba01-e173a6eb67bc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 35877,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "charts": true,
+        "pretty": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

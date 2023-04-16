@@ -19,4 +19,5 @@ Feature: Validate A Class models price
   Scenario: Filter by Fuel type 'Diesel' and validate the highest and lowest price results
     Given already on Build Your Car page
     When click on 'Diesel' option
-    # Then Highest and Lowest price appears successfully
+    Then Highest and Lowest price appears successfully
+    And the Values £ of each price result are saved in the file A_CLASS_MODELS 

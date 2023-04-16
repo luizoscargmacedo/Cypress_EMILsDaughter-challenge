@@ -8,6 +8,15 @@
     "videoCompression": false,
     "chromeWebSecurity": false,
     "includeShadowDom": true,
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "charts": true,
+        "pretty": true
+    },
     "experimentalSessionAndOrigin": false,
     "retries": {
         "runMode": 0,

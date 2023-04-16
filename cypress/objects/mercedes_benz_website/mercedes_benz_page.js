@@ -22,12 +22,14 @@ export class MercedesMainPageSettings {
     // To validate Menu Elements
     validateMainMenuElements() {
         cy.get(this.MercedesMainPageSettings.mainMenuComponent).contains(this.MercedesMainPageSettings.ourModelsMenu).should('exist')
-        cy.get(this.MercedesMainPageSettings.mainMenuComponent).contains(this.MercedesMainPageSettings.buyOnlineMenu).should('exist')
+        cy.get(this.MercedesMainPageSettings.mainMenuComponent).contains(this.MercedesMainPageSettings.buyOnlineMenu).should('exist') 
+        cy.screenshot('mercedes_benz_page_ELEMENT')
     }
 
 
     // To select a Specific Menu
     openSpecificMenu(menuOption) {
+        cy.screenshot('mercedes_benz_page_SPECIFIC_MENU') 
         switch (menuOption) {
             // To click on 'Our Models' Button
             case 'Our Models':
@@ -47,6 +49,7 @@ export class MercedesMainPageSettings {
 
     // To select a Model
     selectModelOption(ourModels) {
+        cy.screenshot('mercedes_benz_page_SELECT_MODEL_OPTION') 
         switch (ourModels) {
             // To click on 'Hatchbacks' Button
             case 'Hatchbacks':
@@ -62,6 +65,7 @@ export class MercedesMainPageSettings {
 
     // To select a Hatchback Model
     selectHatchbackModel(hatchbackOption){
+        cy.screenshot('mercedes_benz_page_SELECT_HATCHBACK_MODEL') 
         switch (hatchbackOption){
             // To click on 'A-Class Hatchback' model
             case 'A-Class Hatchback':
@@ -77,6 +81,7 @@ export class MercedesMainPageSettings {
 
     // To select 'Build your car' or 'Buy online' 
     buildYourCar(buildOrBuyOption){
+        cy.screenshot('mercedes_benz_page_BUILD_YOUR_CAR') 
         switch (buildOrBuyOption){
             // To click on 'A-Class Hatchback' model
             case 'Build your car':

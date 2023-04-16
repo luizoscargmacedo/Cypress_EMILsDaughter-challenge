@@ -27,30 +27,26 @@ Basic Automation Structure
 
 
 #### To run the automation tests:
+- To run the automation tests with interface (UI mode)
 ```sh
-./node_modules/.bin/cypress run
+npx cypress open
 ```
-or 
+click on 'validateA_ClassModelsPrice.feature'
+
+
+- To run the automation tests without interface (headless mode):
 ```sh
-npx cypress run
+npx cypress run --browser chrome
 ```
 
 - To run by TAG follow the example below.
 ```sh
-npm run tags TAGS='@unitedkingdom'
+npx cypress run TAGS='@unitedkingdom' --browser chrome
 ```
-or
-```sh
-npx cypress run TAGS='@unitedkingdom'
-```
-or
-```sh
-npx cypress run --spec "cypress/integration/functional/customer_regression/flow/unitedKingdomMarket/configureVehicles.feature"
 
-To run by TAG and generate a report.
-```sh
-npm run tags TAGS='@unitedkingdom' ; npm run report 
-```
+#### Report of Automation Tests
+EMILsDaughter-challenge/report
+- Right Click on 'mochawesome.html', select the 'Copy Path' and open the PATH copied on the Browser.
 
 ### Project Information:
 Version: 1.0

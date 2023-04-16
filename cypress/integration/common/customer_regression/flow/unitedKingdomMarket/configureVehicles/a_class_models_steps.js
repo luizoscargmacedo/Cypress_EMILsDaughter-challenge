@@ -29,9 +29,20 @@ Then('Build your car screen appears successfully', () => {
     build_your_car_settings.validateBuildYourCarPage()
 })
 
+// To validate Highest and Lowest price elements
+Then('Highest and Lowest price appears successfully', () => {
+    build_your_car_settings.validateLowestAndHighestPriceElements()
+})
+
 ////////////////////////// And ///////////////////////////////////
 // choose the 'A Class' model available and proceed to 'Build your car'
 And('choose the {string} model available and proceed to {string}', function (hatchbackOption, buildOrBuyOption) {
     mercedes_main_page_settings.selectHatchbackModel(hatchbackOption)
     mercedes_main_page_settings.buildYourCar(buildOrBuyOption)
+})
+
+// To collect and save Highest and Lowest price in the file A_CLASS_MODELS
+And('the Values £ of each price result are saved in the file A_CLASS_MODELS', () => {
+    build_your_car_settings.collectLowestPrice() 
+    build_your_car_settings.collectHighestPrice() 
 })
