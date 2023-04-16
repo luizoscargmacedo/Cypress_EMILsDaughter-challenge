@@ -31,7 +31,7 @@ Basic Automation Structure
 ```sh
 npx cypress open
 ```
-click on 'validateA_ClassModelsPrice.feature'
+click on 'validateA_ClassModelsPrice.feature' (Cypress Window)
 
 
 - To run the automation tests without interface (headless mode):
@@ -43,6 +43,13 @@ npx cypress run --browser chrome
 ```sh
 npx cypress run TAGS='@unitedkingdom' --browser chrome
 ```
+
+
+- To run the automation tests with FIREFOX BROWSER
+```sh
+npx cypress run --browser firefox
+```
+
 
 #### Report of Automation Tests
 EMILsDaughter-challenge/report

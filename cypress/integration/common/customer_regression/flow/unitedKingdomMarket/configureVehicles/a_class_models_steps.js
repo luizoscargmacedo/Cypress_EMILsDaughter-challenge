@@ -35,7 +35,7 @@ Then('Highest and Lowest price appears successfully', () => {
 })
 
 ////////////////////////// And ///////////////////////////////////
-// choose the 'A Class' model available and proceed to 'Build your car'
+// Choose the 'A Class' model available and proceed to 'Build your car'
 And('choose the {string} model available and proceed to {string}', function (hatchbackOption, buildOrBuyOption) {
     mercedes_main_page_settings.selectHatchbackModel(hatchbackOption)
     mercedes_main_page_settings.buildYourCar(buildOrBuyOption)

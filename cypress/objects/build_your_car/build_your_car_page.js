@@ -23,7 +23,7 @@ export class BuildYourCarSettings {
     }
 
 
-    // To validate BuildYourCarPage
+    // To validate Build Your Car Page
     validateBuildYourCarPage() {
         let dataUseAgreement = this.BuildYourCarSettings.dataUseAgreement.modalTitle
         // Sometimes the Data Use Agreement appears, because of that I create this function. 

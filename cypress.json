@@ -6,7 +6,6 @@
     "viewportHeight": 1080,
     "video": true,
     "videoCompression": false,
-    "chromeWebSecurity": false,
     "includeShadowDom": true,
     "reporter": "mochawesome",
     "reporterOptions": {

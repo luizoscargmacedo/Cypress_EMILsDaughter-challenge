@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2023-04-16T09:50:28.356Z",
-    "end": "2023-04-16T09:52:17.691Z",
-    "duration": 109335,
+    "start": "2023-04-16T12:01:35.493Z",
+    "end": "2023-04-16T12:04:07.500Z",
+    "duration": 152007,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3c14a6ac-c911-445e-83f0-925881fcb9c9",
+      "uuid": "5a5acfa3-0563-4a47-a4a7-0bdbf168740c",
       "title": "",
       "fullFile": "cypress/integration/functional/customer_regression/flow/unitedKingdomMarket/validateA_ClassModelsPrice.feature",
       "file": "cypress/integration/functional/customer_regression/flow/unitedKingdomMarket/validateA_ClassModelsPrice.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e96979c8-3671-43cb-9190-a3a9c3abab84",
+          "uuid": "ed842b67-dde8-4b81-97a2-ec37ba5685e0",
           "title": "Validate A Class models price",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Open Mercedes-benz United Kingdom market and validate the Main Menu",
               "fullTitle": "Validate A Class models price Open Mercedes-benz United Kingdom market and validate the Main Menu",
               "timedOut": null,
-              "duration": 29469,
+              "duration": 32955,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "b7596efa-9f1a-45c3-bd79-a9ce5f6eaad5",
-              "parentUUID": "e96979c8-3671-43cb-9190-a3a9c3abab84",
+              "uuid": "d1cd9d76-6e1e-4d41-ba3e-3de60cdebdc6",
+              "parentUUID": "ed842b67-dde8-4b81-97a2-ec37ba5685e0",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Choose the 'A Class' model available",
               "fullTitle": "Validate A Class models price Choose the 'A Class' model available",
               "timedOut": null,
-              "duration": 63250,
+              "duration": 97250,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "b7127497-ee36-4433-985c-dce1196b8cbc",
-              "parentUUID": "e96979c8-3671-43cb-9190-a3a9c3abab84",
+              "uuid": "82ac8d78-e3bb-43e9-8da4-7ec486874b6c",
+              "parentUUID": "ed842b67-dde8-4b81-97a2-ec37ba5685e0",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Filter by Fuel type 'Diesel' and validate the highest and lowest price results",
               "fullTitle": "Validate A Class models price Filter by Fuel type 'Diesel' and validate the highest and lowest price results",
               "timedOut": null,
-              "duration": 16108,
+              "duration": 21224,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "dc3ed9dd-8bd6-4254-947f-78d5d984668e",
-              "parentUUID": "e96979c8-3671-43cb-9190-a3a9c3abab84",
+              "uuid": "99a86449-48bd-41ee-9a45-fb241d608e82",
+              "parentUUID": "ed842b67-dde8-4b81-97a2-ec37ba5685e0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b7596efa-9f1a-45c3-bd79-a9ce5f6eaad5",
-            "b7127497-ee36-4433-985c-dce1196b8cbc",
-            "dc3ed9dd-8bd6-4254-947f-78d5d984668e"
+            "d1cd9d76-6e1e-4d41-ba3e-3de60cdebdc6",
+            "82ac8d78-e3bb-43e9-8da4-7ec486874b6c",
+            "99a86449-48bd-41ee-9a45-fb241d608e82"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 108827,
+          "duration": 151429,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
